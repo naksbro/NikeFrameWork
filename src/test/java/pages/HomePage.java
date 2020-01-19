@@ -11,7 +11,7 @@ public class HomePage extends TestBase {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (className = "nav-brand fs16-nav-sm prl5-sm pt6-sm pb6-sm nav-uppercase d-sm-ib va-sm-m")
+    @FindBy (xpath = "//a[@aria-controls='NavigationMenu-1']")
     public WebElement mensTab;
 
     public void clickMensTab () {

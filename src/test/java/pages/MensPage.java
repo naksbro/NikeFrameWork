@@ -14,8 +14,11 @@ public class MensPage extends TestBase {
     @FindBy (id = "TypeaheadSearchInput")
     public WebElement searchField;
 
-    @FindBy (className = "btn-search z2 bg-transparent")
+    @FindBy (className = "btn-search.z2.bg-transparent")
     public WebElement searchBtn;
+
+    @FindBy (className = "_1ZsY6zh2")
+    public WebElement pageTitle;
 
     public void searchForShoe (String shoe) {
         SeleniumUtils.sendKeys(searchField, shoe);

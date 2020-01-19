@@ -25,7 +25,7 @@ public class HomePageTest extends TestBase {
 
     @Test
     public void verifyHomePageTitle () {
-        SeleniumUtils.waitForVisibility(home.searchField);
+        SeleniumUtils.waitForVisibility(home.mensTab);
         Assert.assertEquals(driver.getTitle(), "Nike. Just Do It. Nike.com");
     }
 }
