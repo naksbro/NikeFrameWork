@@ -14,14 +14,19 @@ public class MensPage extends TestBase {
     @FindBy (id = "TypeaheadSearchInput")
     public WebElement searchField;
 
-    @FindBy (className = "btn-search.z2.bg-transparent")
-    public WebElement searchBtn;
+    @FindBy (xpath = "(//div[@class='ncss-col-sm-4 va-sm-m'])[2]")
+    public WebElement mensShoe;
 
     @FindBy (className = "_1ZsY6zh2")
     public WebElement pageTitle;
 
     public void searchForShoe (String shoe) {
         SeleniumUtils.sendKeys(searchField, shoe);
-        SeleniumUtils.clickElement(searchBtn);
+    }
+
+    public void clickMensShoe () {
+        searchForShoe("presto");
+        SeleniumUtils.waitForVisibility(mensShoe);
+        SeleniumUtils.clickElement(mensShoe);
     }
 }
