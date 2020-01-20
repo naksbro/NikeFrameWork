@@ -1,0 +1,7 @@
+<suite name = "PHP suite">
+    <test name = "Test 1">
+        <packages>
+            <package name = "tests"/>
+        </packages>
+    </test>
+</suite>
