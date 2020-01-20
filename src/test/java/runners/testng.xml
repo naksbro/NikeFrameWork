@@ -1,4 +1,4 @@
-<suite name = "PHP suite">
+<suite name = "Nike suite">
     <test name = "Test 1">
         <packages>
             <package name = "tests"/>
